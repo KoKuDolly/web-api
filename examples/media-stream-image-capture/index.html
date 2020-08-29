@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>media-stream-image-capture</title>
+</head>
+
+<body>
+  <div id='results'>
+    <div>
+      <video autoplay></video>
+      <button id='getUserMediaButton'>Get User Media</button>
+    </div>
+    <div>
+      <canvas id='grabFrameCanvas'></canvas>
+      <button id='grabFrameButton' disabled>Grab Frame</button>
+      <button id="download-by-canvas" disabled>download-by-canvas</button>
+    </div>
+    <div>
+      <canvas id='takePhotoCanvas'></canvas>
+      <button id='takePhotoButton' disabled>Take Photo</button>
+    </div>
+    <div>
+      <button id='download' disabled>download-by-blob</button>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>

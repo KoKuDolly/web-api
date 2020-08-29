@@ -1,0 +1,34 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: jiajun.qin
+ * @Date: 2020-07-24 17:49:25
+ * @LastEditors: jiajun.qin
+ * @LastEditTime: 2020-07-24 18:04:05
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location</title>
+</head>
+<body>
+    <script>
+      // const params = new URLSearchParams({foo: 1, bar: 2});
+      // console.log(params);
+      // for (let p of params) {
+      //   console.log(p, p[0], p[1]);
+      // //   ["foo", "1"] "foo" "1"
+      // //   ["bar", "2"] "bar" "2"
+      // }
+
+      // URL: https://example.com?version=1.0
+      const params = new URLSearchParams(location.search.slice(1));
+      params.set('version', 2.0);
+
+      window.history.replaceState({}, '', location.pathname + `?` + params);
+      // URL: https://example.com?version=2.0
+    </script>
+</body>
+</html>

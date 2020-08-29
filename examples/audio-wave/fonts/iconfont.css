@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "custom-audio";
+  src: url('iconfont.eot?t=1598251772070');
+  /* IE9 */
+  src: url('iconfont.eot?t=1598251772070#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAS0AAsAAAAACiQAAARnAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDVgqGSIU0ATYCJAMcCxAABCAFhR0HZBu4CFGUzc0u2c8Cu20lCFJzN18o1fFwWkAQnEnyUI++j4f/9vvfPjNz5asklaQKzdNfdEsaSbC6h0iIlE737iW869/NNlAxSc0tPbE0vFCKhAkvbc/DmeiXuEDPxCB1o2vX8RmE1YTUW4j+n2OpV0En8O0AILqo0iJS5MCzt6ZonsiANtrzAQ5sKuF1GegOfPBmAt2mRCOul1Y3g4XCWReIxwo5DRYlpdJDCa2kbjlaiA9gqk1Pch7ex58f/9kMCyRVxtl691GJDPJ/TX5eLhX/i/qFCGAtp4d0iowNoBAvW40vSFPPBqlu4ykmbgK9Wkn59Z89ePbi2bvn5f87lFBlXMcaet2dhCQrKjXh/+8g7A3F90reml+TebkwRA8glyB6AbkM0TtQKfwuk6sgKofIXUU3on4QoxIfAbt90SJJQpayPoSNm4+bg4ONi4ube6zv4s2TN3qCuPWdfI1Q6XkMhma7nh6KsSImEa231mSI2Dp//dq5Cxe4NM/Z7kbNW7R4sXhB15ZWXeM8/eZdrg1N83dsFF3qG+aKG7r2N9bP2blJ7z6IWnfQi1h8KKx12vdbCBEXrFnnprSevBEsbrA6kzYRpd9sW74sw8zXu7XNW+MimbuWm7Nu0WL3fcf0RzM3s6933WM8FLM+9fp1fQ81b9nmEKOxhdU2qmaTnBPzOM7M5maYEDgBjEGOQeAHGYnu4G4iDCofOLCcAI8WBRPlxpFREAV+JM9bw7u+/tTdgv5ftYw3GPbBLcOh8aj0ASXr2rlm9254O3LfgYAJDufO7z/nMCHgwL4Sef/5aeM0M3ye1dhhu5pnyeUmT16AJxpsE20NDy+A5leUU7fTJj+f+O8MVun8fyEX5P9nPpsfvWDXxR2dPe07JQOr6yQ75dc7d/5O7Qea3f7ee7d37e46UR/Wb/aOPrPqw78HPzYfGK/ZAkqq51sleP28Zutvv8vwO40A6Bhrs5QCIH+SnATpi0V+0WfPBSB/lNxg/Jm+nwgE36xCwwfaZ3+1KMBPxejfcHaMgeW8rQSZ9UdjEcuKyXFUTdFz+3ECjbNCiIRut40/mHXYveXEY+RYQq+xHJLGLGS9VpAFuw2VHudQ63UDuq1rPd1jxCiQirJhzVwGYdIhSPp9hWzSU2TB/oXKeLhCbTKioNtVFF2wx1IstCriEY2RjGwbTCoYTsN6X4OtGEGHOXUMLcgUXCOSCyqar2ZwNgrxunBAQybExjf5y5AG8Uvu0HXKEzFmSZbn1GTp7LdDKhVHanmuAzE4th1jbWZcHNv2RrEMpwYr1/AQGobIkNoMRlJgcDTY8PeGWblPoINx1GLQBDIKnEaInECFxhPy4lwUhJcZ+fA0SAlixRORZUINOetRr6PTSS4RhrFILH6imVR6eD2icj0ckrZ9UQeEgcVqn+DSyhTHVWOpwti7IFa//nzIw/mYJqxS1BqaWrQPuC6NiqNlJmoBI1MtLeiQiVZFD7bu5FSCGsWwgkqVh7XTKhYAAA==') format('woff2'),
+    url('iconfont.woff?t=1598251772070') format('woff'),
+    url('iconfont.ttf?t=1598251772070') format('truetype'),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont.svg?t=1598251772070#custom-audio') format('svg');
+  /* iOS 4.1- */
+}
+
+.custom-audio {
+  font-family: "custom-audio" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.custom-audio-download:before {
+  content: "\e68b";
+}
+
+.custom-audio-mute:before {
+  content: "\e6e0";
+}
+
+.custom-audio-pause:before {
+  content: "\e6e8";
+}
+
+.custom-audio-play:before {
+  content: "\e6ee";
+}
+
+.custom-audio-volume-full:before {
+  content: "\e747";
+}
+
+.custom-audio-volume-half:before {
+  content: "\e748";
+}

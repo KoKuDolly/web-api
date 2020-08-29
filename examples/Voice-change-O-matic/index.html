@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>examples-1</title>
+  <!--[if le IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="scripts/respond.js"></script>
+    <![endif]-->
+  <link rel="stylesheet" href="./app.css">
+  <link rel="stylesheet" href="./normalize.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1>Voice-change-O-matic</h1>
+    </header>
+
+    <canvas class="visualizer"></canvas>
+
+    <form class="controls">
+      <div>
+        <label for="voice">Voice setting</label>
+        <select name="voice" id="voice">
+          <option value="distortion">Distortion</option>
+          <option value="convolver">Reverb</option>
+          <option value="biquad">Bass Boost</option>
+          <option value="oscillator">oscillator</option>
+          <option value="off" selected>Off</option>
+        </select>
+      </div>
+      <div>
+        <label for="visual">Visualizer setting</label>
+        <select name="visual" id="visual">
+          <option value="sinewave" selected>sinewave (default)</option>
+          <option value="frequencybars" selected>frequency bars</option>
+          <option value="off">Off</option>
+        </select>
+      </div>
+      <div>
+        <a class="mute">Mute</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

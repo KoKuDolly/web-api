@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recording a media element - Example - code sample</title>
+  <link rel="stylesheet" href="app.css" type="text/css">
+</head>
+
+<body>
+  <div class="left">
+    <div id="startButton" class="button">
+      Start
+    </div>
+    <h2>Preview</h2>
+    <video id="preview" width="160" height="120" autoplay muted></video>
+  </div>
+  <div class="right">
+    <div id="stopButton" class="button">
+      Stop
+    </div>
+    <h2>Recording</h2>
+    <video id="recording" width="160" height="120" controls></video>
+    <a id="downloadButton" class="button">
+      Download
+    </a>
+  </div>
+  <div class="bottom">
+    <pre id="log"></pre>
+  </div>
+  <script src="./app.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!--
+ * @Author: jiajun.qin
+ * @LastEditors: jiajun.qin
+ * @Date: 2020-08-27 23:34:17
+ * @LastEditTime: 2020-08-28 01:00:13
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>custom-audio</title>
+  <!-- 整体样式 -->
+  <link rel="stylesheet" href="./styles/app.css" type="text/css" />
+  <link rel="stylesheet" href="./fonts/iconfont.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/custom-audio.css" type="text/css" />
+  <script src="./fonts/iconfont.js" type="text/javascript"></script>
+  <!-- <script src="./node_modules/@svgdotjs/svg.js/dist/svg.js" type="text/javascript"></script> -->
+</head>
+
+<body>
+  <div class="demos">
+    <!-- 原生音频播放器 -->
+    <h3>原生音频播放器</h3>
+    <audio src="./musics/7!! - 虹色.mp3" controls></audio>
+    <!-- 自定义音频播放器 -->
+    <h3>自定义音频播放器</h3>
+    <div class="audio-con">
+      <div class="audio-con-inner">
+        <canvas id="canvas"></canvas>
+        <!-- <div id="draw"></div> -->
+        <div class="rect"></div>
+        <div class="trigger-drag"></div>
+        <!-- <div class="trigger-river"></div> -->
+      </div>
+      <span class="custom-audio custom-audio-download" id="download"></span>
+      <span class="custom-audio custom-audio-play" id="playpause"></span>
+      <span class="custom-audio custom-audio-mute" id="volume"></span>
+      <input type="range" name="beans" id="beans" min="0" max="100" step="1" value="0" />
+    </div>
+
+    <!-- <h3 style="text-align: center;width: 100%; max-width: 1024px;">振幅/时间图</h3> -->
+  </div>
+
+  <!-- <script src="./js/audio-controller.js"></script> -->
+  <script src="./js/custom-audio-koku.js"></script>
+</body>
+
+</html>

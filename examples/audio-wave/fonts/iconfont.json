@@ -1,0 +1,51 @@
+{
+  "id": "2024365",
+  "name": "custom-audio",
+  "font_family": "custom-audio",
+  "css_prefix_text": "custom-audio-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16678463",
+      "name": "download",
+      "font_class": "download",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "16678654",
+      "name": "mute",
+      "font_class": "mute",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "16678672",
+      "name": "pause",
+      "font_class": "pause",
+      "unicode": "e6e8",
+      "unicode_decimal": 59112
+    },
+    {
+      "icon_id": "16678683",
+      "name": "play",
+      "font_class": "play",
+      "unicode": "e6ee",
+      "unicode_decimal": 59118
+    },
+    {
+      "icon_id": "16678848",
+      "name": "volume-full",
+      "font_class": "volume-full",
+      "unicode": "e747",
+      "unicode_decimal": 59207
+    },
+    {
+      "icon_id": "16678849",
+      "name": "volume-half",
+      "font_class": "volume-half",
+      "unicode": "e748",
+      "unicode_decimal": 59208
+    }
+  ]
+}

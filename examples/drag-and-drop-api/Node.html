@@ -1,0 +1,55 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: jiajun.qin
+ * @Date: 2020-07-28 14:58:18
+ * @LastEditors: jiajun.qin
+ * @LastEditTime: 2020-07-28 18:47:17
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node接口</title>
+</head>
+
+<body>
+  <script>
+    // Node.prototype.isConnected 当前节点是否在文档之中
+    // Node.prototype.compareDocumentPosition()
+    // Node.prototype.normalize()   Text 节点对象  Text.splitText的逆方法
+    // ownerDocument
+    // document.getRootNode() // document
+    // document.ownerDocument // null
+  </script>
+  <script>
+    function DOMComb(parent, callback) {
+      if (parent.hasChildNodes()) {
+        for (var node = parent.firstChild; node; node = node.nextSibling) {
+          DOMComb(node, callback);
+        }
+      }
+      callback(parent);
+    }
+
+    // 用法
+    // DOMComb(document.body, console.log)
+  </script>
+  <script>
+    var wrapper = document.createElement('div');
+
+    wrapper.appendChild(document.createTextNode('Part 1 '));
+    wrapper.appendChild(document.createTextNode('Part 2 '));
+    wrapper.normalize();
+
+    document.body.appendChild(wrapper);
+
+    console.log(wrapper.childNodes.length) // 2
+    // wrapper.normalize();
+    console.log(wrapper.childNodes.length) // 1
+  </script>
+</body>
+
+</html>

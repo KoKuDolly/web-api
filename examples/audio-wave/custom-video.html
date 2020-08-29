@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>custom-audio&video</title>
+  <link rel="stylesheet" href="./styles/custom-video.css" type="text/css">
+</head>
+
+<body>
+  <h3>自定义video播放器</h3>
+  <figure id="videoContainer" data-fullscreen="false">
+    <video id="video" controls preload="metadata" poster="img/poster.png">
+      <!-- <source src="http://iandevlin.github.io/mdn/video-player/video/tears-of-steel-battle-clip-medium.mp4"
+        type="video/mp4"> -->
+      <source src="./videos/supercell - さよならメモリーズ.mp4" type="video/mp4">
+    </video>
+    <div id="video-controls" class="controls" data-state="hidden">
+      <!-- Play/Pause -->
+      <button id="playpause" type="button" data-state="play"></button>
+      <!-- Stop -->
+      <button id="stop" type="button" data-state="stop"></button>
+      <div class="progress">
+        <progress id="progress" value="0" min="0">
+          <span id="progress-bar"></span>
+        </progress>
+      </div>
+      <!-- Mute/Unmute -->
+      <button id="mute" type="button" data-state="mute"></button>
+      <!-- Vol+ -->
+      <button id="volinc" type="button" data-state="volup"></button>
+      <!-- Vol- -->
+      <button id="voldec" type="button" data-state="voldown"></button>
+      <!-- Fullscreen -->
+      <button id="fs" type="button" data-state="go-fullscreen"></button>
+    </div>
+    <figcaption>
+      &copy;
+    </figcaption>
+  </figure>
+
+  <script src="./js/video-player.js"></script>
+</body>
+
+</html>
