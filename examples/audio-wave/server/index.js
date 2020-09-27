@@ -20,6 +20,6 @@ server.on("request", (req, res) => {
   );
 });
 
-http: server.listen(3333, function () {
+server.listen(3333, function () {
   console.log("server listen at http://127.0.0.1:3333");
 });
