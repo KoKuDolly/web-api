@@ -1,0 +1,52 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: jiajun.qin
+ * @Date: 2020-07-24 10:10:07
+ * @LastEditors: jiajun.qin
+ * @LastEditTime: 2020-07-24 16:30:35
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fileReader</title>
+</head>
+<body>
+  <input type="file" onchange="uploadFile(this)" multiple>
+  <div id="show"></div>
+  <script>
+    function uploadFile(that) {
+      const slice = that.files[0].slice(0, 4)
+      const reader = new FileReader();
+      reader.readAsArrayBuffer(slice);
+      reader.onload = function(e) {
+        const buffer = reader.result;
+        const view = new DataView(buffer);
+        const magic = view.getUint32(0, false);
+        // console.log(magic);
+      }
+
+      
+
+      const div = document.getElementById('show');
+      // console.log(div.childElementCount, div.childNodes, div.children, div.hasChildNodes())
+      if (div.hasChildNodes()) {
+        [].slice.call(div.childNodes).forEach(v => {
+          div.removeChild(v);
+        });
+        
+      }
+      for (let i = 0; i < that.files.length; i++) {
+        const img = document.createElement('img');
+        img.src = window.URL.createObjectURL(that.files[i]);
+        div.appendChild(img);
+        img.onload = function() {
+          window.URL.revokeObjectURL(this.src);
+        }
+      }
+    }
+  </script>
+</body>
+</html>
